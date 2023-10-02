@@ -14,18 +14,18 @@
   }
   label{
     color: $darkBlue;
-    float: left;
     font-weight: bold;
   }
   .form-group{
     margin: 1rem 0;
+    border-bottom: 1px solid $white;
+    text-align: start;
 
     .form-control{
       border: 0;
-      border-bottom: 1px solid $white;
-      padding: 0.5rem 0;
-      width: 100%;
       background: transparent;
+      padding: 10px 0;
+      width: 90%;
     }
   }
   button{
