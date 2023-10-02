@@ -1,1 +1,23 @@
-<p>login works!</p>
+<div class="auth-page">
+  <div class="header-logo">
+    <img alt="Logo Header" ngSrc="assets/img/logo_header.svg" height="217" width="215"/>
+  </div>
+  <form>
+    <h1 class="title text-white">Easy Media</h1>
+    <h3 class="text-blue mt-1 mb-1">Now, share is easy</h3>
+    <h2 class="text-white">Sign In</h2>
+    <div class="form-group">
+      <label>Email</label>
+      <input class="form-control" type="text" placeholder="example@email.com">
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input class="form-control" type="password" placeholder="">
+    </div>
+    <button>Sign In</button>
+    <p class="footer-text">
+      <span class="text-gray">Don’t have an account? </span>
+      <a routerLink="/register" class="text-blue">Sign up here</a>
+    </p>
+  </form>
+</div>

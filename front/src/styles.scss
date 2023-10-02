@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/_scss/variables';
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: $lato;
+}
+
+#app{
+  background: $mainBackground;
+  min-height: 100vh;
+}
+
+.text-white{
+  color: $white;
+}
+
+.text-gray{
+  color: $gray;
+}
+
+.text-red{
+  color: $red;
+}
+
+.text-blue{
+  color: $lightBlue;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 1rem 0;
+}
+
+.title{
+  font-size: 30px;
+}
+
+button{
+  background: $gradientBackground;
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  border: 0;
+  color: $white;
+  cursor: pointer;
+}
+
+.mt-1{
+  margin-top: 1rem;
+}
+
+.mb-1{
+  margin-bottom: 1rem;
+}

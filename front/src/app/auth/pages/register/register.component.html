@@ -1,1 +1,31 @@
-<p>register works!</p>
+<div class="auth-page">
+  <div class="header-logo register">
+    <img  alt="Logo Header" ngSrc="assets/img/logo_header.svg" height="217" width="215"/>
+  </div>
+  <form>
+    <h1 class="title text-white">Easy Media</h1>
+    <h3 class="text-blue mt-1 mb-1">Now, share is easy</h3>
+    <h2 class="text-white">Sign Up</h2>
+    <div class="form-group">
+      <label>Full Name</label>
+      <input class="form-control" type="text" placeholder="Andres Puello">
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input class="form-control" type="text" placeholder="example@email.com">
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input class="form-control" type="password" placeholder="">
+    </div>
+    <div class="form-group">
+      <label>Confirm Password</label>
+      <input class="form-control" type="password" placeholder="">
+    </div>
+    <button>Sign Up</button>
+    <p class="footer-text mb-1">
+      <span class="text-gray">Already have an account? </span>
+      <a routerLink="/login" class="text-blue">Login</a>
+    </p>
+  </form>
+</div>
