@@ -1,1 +1,26 @@
-<p>header works!</p>
+<header>
+  <div class="container-profile">
+    <img ngSrc="/assets/img/logo-user-profile.svg" alt="Logo Application" width="28" height="28"/>
+    <span class="text-darkBlue">Easy Media</span>
+  </div>
+  <div class="container-menu">
+    <img (click)="toggleVisibleMenu()" ngSrc="assets/img/icon/icon-menu.svg" alt="Icon menu" width="27" height="15"/>
+    <div class="menu" [hidden]="isVisibleMenu">
+      <p>UserName</p>
+      <hr/>
+      <ul>
+        <li>
+          <img ngSrc="assets/img/icon/icon-edit.svg" alt="Create post logo" [height]="iconSizes.height" [width]="iconSizes.width"/>
+          Create Publication
+        </li>
+        <li><img ngSrc="assets/img/icon/icon-send.svg" alt="My post logo" [height]="iconSizes.height" [width]="iconSizes.width"/> My Publications</li>
+        <li>
+          <img ngSrc="assets/img/icon/icon-message.svg" alt="Create post logo" [height]="iconSizes.height" [width]="iconSizes.width"/>
+          See All Publications</li>
+        <li>
+          <img ngSrc="assets/img/icon/icon-logout.svg" alt="Create post logo" [height]="iconSizes.height" [width]="iconSizes.width"/>
+          Logout</li>
+      </ul>
+    </div>
+  </div>
+</header>

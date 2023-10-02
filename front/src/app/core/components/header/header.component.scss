@@ -1,0 +1,62 @@
+@import '../../../../assets/_scss/variables';
+
+header{
+  padding: 1rem 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $white;
+}
+
+.container-profile{
+  display: flex;
+  align-items: center;
+  img{
+    margin-right: 1rem;
+  }
+  span{
+    font-weight: 700;
+    font-size: 15px;
+  }
+}
+
+.container-menu{
+  position: relative;
+}
+
+p, li{
+  padding: 0.5rem !important;
+}
+
+.menu{
+  position: absolute;
+  bottom: -198px;
+  left: -140px;
+  width: 175px;
+  height: auto;
+  background: $white;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 0 #00000040;
+
+  hr{
+    border-color: $gray;
+  }
+
+  ul{
+    display: contents;
+    list-style: none;
+
+    li{
+      padding: 0.5rem 0;
+      cursor: pointer;
+    }
+  }
+}
+
+ul li:last-child{
+  border-radius: 0 0 10px 10px;
+}
+
+li:hover{
+  background: $gray;
+}

@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  isVisibleMenu: boolean = true;
+  iconSizes = { height: 12, width: 12 };
 
+  toggleVisibleMenu(): void {
+    this.isVisibleMenu = !this.isVisibleMenu;
+  }
 }

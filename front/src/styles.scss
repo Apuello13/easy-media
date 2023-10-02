@@ -26,14 +26,12 @@
 .text-blue{
   color: $lightBlue;
 }
+.text-darkBlue{
+  color: $darkBlue;
+}
 
 .wrapper{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: auto;
-  padding: 1rem 0;
 }
 
 .title{
@@ -57,4 +55,71 @@ button{
 
 .mb-1{
   margin-bottom: 1rem;
+}
+
+img{
+  cursor: pointer;
+}
+
+.text-end{
+  text-align: end;
+}
+
+.form-post{
+  min-width: 300px;
+  width: auto;
+  .form-group{
+    display: flex;
+    flex-direction: column;
+    .counter{
+      color: $gray;
+    }
+  }
+  label{
+    margin-bottom: 0.4rem;
+  }
+  input, textarea {
+    background: $softGray;
+    border: 1px solid $black;
+    border-radius: 16px;
+    padding: 0.5rem 1rem;
+  }
+  textarea{
+    resize: none;
+  }
+}
+
+.card{
+  border: 1px solid $darkGray;
+  min-height: 128px;
+  width: 100%;
+  position: relative;
+  border-radius: 16px;
+  .card-header, .card-body {
+    padding: 0.6rem;
+  }
+  .card-header{
+    background: $lightBlue;
+    min-height: 28px;
+    border-radius: 16px 16px 0 0;
+  }
+  .card-body{
+    background: $darkGray;
+    min-height: 100px;
+    border-radius: 0 0 16px 16px;
+  }
+  .card-footer{
+    position: absolute;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 10px;
+    left: 10px;
+    font-size: 12px;
+  }
+}
+
+input, textarea:focus{
+  outline: none;
 }

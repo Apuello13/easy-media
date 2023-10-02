@@ -1,6 +1,10 @@
 @import './variables';
 
 .auth-page{
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .header-logo{
     text-align: center;
   }
@@ -10,7 +14,6 @@
   }
   form{
     text-align: center;
-    width: 100%;
   }
   label{
     color: $darkBlue;
@@ -36,8 +39,4 @@
     margin-top: 2rem;
     float: right;
   }
-}
-
-.form-control:focus{
-  outline: none;
 }

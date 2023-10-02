@@ -1,1 +1,19 @@
-<p>create-post works!</p>
+<h1 class="title text-white mt-1">Create Message</h1>
+<form class="form-post mb-1" [formGroup]="postForm">
+  <div class="form-group mb-1">
+    <label>Title Messages</label>
+    <input type="text" formControlName="title" [maxlength]="maxLength.input" placeholder="Your post title"/>
+    <span class="counter text-end">{{ getLength('title') }}/{{ maxLength.input }}</span>
+  </div>
+  <div class="form-group mb-1">
+    <label>Messages</label>
+    <textarea formControlName="message" rows="4" [maxLength]="maxLength.textarea" placeholder="Create message for share with your friends."></textarea>
+    <span class="counter text-end">{{ getLength('message') }}/{{ maxLength.textarea }}</span>
+  </div>
+  <div class="text-end">
+    <button type="submit">Share</button>
+  </div>
+  <div class="mt-1">
+    <app-post-card [post]="postForm.value"></app-post-card>
+  </div>
+</form>
