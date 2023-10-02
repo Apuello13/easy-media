@@ -1,1 +1,15 @@
-<p>post works!</p>
+<h1 class="title text-white mt-1">{{ title }}</h1>
+<form class="form-post mt-1">
+  <div class="form-group mb-1">
+    <label>Words To Search?</label>
+    <input type="text"/>
+  </div>
+  <div class="form-group mb-1">
+    <label>Date Select</label>
+    <input type="text"/>
+  </div>
+  <div class="mt-1 mb-1">
+    <app-post-card *ngFor="let post of posts" [post]="post"></app-post-card>
+  </div>
+  <div class="paginate"></div>
+</form>

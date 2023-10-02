@@ -77,12 +77,19 @@ img{
   }
   label{
     margin-bottom: 0.4rem;
+    font-weight: 700;
   }
   input, textarea {
     background: $softGray;
     border: 1px solid $black;
     border-radius: 16px;
     padding: 0.5rem 1rem;
+    color: $darkGray;
+    font-weight: 500;
+  }
+  input::placeholder, textarea::placeholder{
+    color: $gray;
+    font-weight: 500;
   }
   textarea{
     resize: none;
